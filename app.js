@@ -1,10 +1,9 @@
 const express=require('express');
-const serverless=this.require('serverless-http');
+const serverless=require('serverless-http');
 const app=express();
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended:true}));
 app.set('view engine','ejs')
-app.set('views','/../views');
 var tasks=[];//an empty array
 app.get('/',(req,res)=>
 {
@@ -48,8 +47,8 @@ app.post('/edit',(req,res)=>{
     console.log(tasks);
     res.redirect('/todo');  
 })
-/*app.listen(9000,()=>
+app.listen(9000,()=>
 {
     console.log("http://localhost:9000");
-});*/
+});
 module.exports=serverless(app);
