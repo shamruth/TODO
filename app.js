@@ -3,7 +3,7 @@ const app=express();
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended:true}));
 app.set('view engine','ejs')
-app.set('views', __dirname + '/../views');
+app.set('views','/../views');
 var tasks=[];//an empty array
 app.get('/',(req,res)=>
 {
