@@ -3,7 +3,8 @@
     "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "serverless-http": "^3.2.0"
   },
   "name": "todo_app",
   "version": "1.0.0",

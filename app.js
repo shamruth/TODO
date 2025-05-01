@@ -1,4 +1,5 @@
 const express=require('express');
+const serverless=this.require('serverless-http');
 const app=express();
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended:true}));
@@ -47,8 +48,8 @@ app.post('/edit',(req,res)=>{
     console.log(tasks);
     res.redirect('/todo');  
 })
-app.listen(9000,()=>
+/*app.listen(9000,()=>
 {
     console.log("http://localhost:9000");
-});
-module.exports=app;
+});*/
+module.exports=serverless(app);
