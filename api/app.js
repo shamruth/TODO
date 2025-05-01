@@ -46,8 +46,8 @@ app.post('/edit',(req,res)=>{
     console.log(tasks);
     res.redirect('/todo');  
 })
-/*app.listen(9000,()=>
+app.listen(9000,()=>
 {
     console.log("http://localhost:9000");
-});*/
-module.exports=app
+});
+module.exports=app;
