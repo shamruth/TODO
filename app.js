@@ -6,8 +6,7 @@ app.set('view engine','ejs')
 var tasks=[];//an empty array
 app.get('/',(req,res)=>
 {
-    res.status(200).json('Welcome, your app is working well');
-    res.render('login');
+    res.render.json('login');
 })
 app.get('/todo',(req,res)=>
 {
