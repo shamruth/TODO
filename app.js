@@ -6,7 +6,7 @@ app.set('view engine','ejs')
 var tasks=[];//an empty array
 app.get('/',(req,res)=>
 {
-    res.render.json('login');
+    res.render('login');
 })
 app.get('/todo',(req,res)=>
 {
@@ -50,4 +50,4 @@ app.listen(9000,()=>
 {
     console.log("http://localhost:9000");
 });
-module.exports=app;
+module.exports=app
