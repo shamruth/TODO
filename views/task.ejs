@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel='spreadsheet' href='style.css'/>
+    </head>
+    <body>
+        <class=container>
+            <h1>WELCOME TO TODO APP</h1>
+            <h2>YOUR TASKS</h2>
+            <ul>
+                <%- task%> <!-- we use <%- task%> instead off <%=task%> to avoid any html format escaping i.e showing output as <li>task1</li>-->
+                
+            </ul>
+            <form method="POST" action="/addtask">
+                <h1>ADD NEW TASK</h1>
+                <input type="text" name="ENTEREDTASK" placeholder="ENTERTASK">
+                <button  type="submit">ADD TASK</button>
+            </form>
+        </class>
+    </body>
+</html>
